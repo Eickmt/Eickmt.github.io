@@ -2,10 +2,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #fdfdf9;
+    background-color: #f4f1ea; /* statt #fdfdf9 oder weiß */
     color: #333333;
     line-height: 1.6;
   }
+  
   
   /* Header */
   header {
@@ -14,13 +15,18 @@ body {
     padding: 1em 2em;
     display: flex;
     align-items: center;
-    gap: 4em;
+    justify-content: start;
+    gap: 3em;
   }
   
-  
+  nav {
+    padding-left: 6em;
+  }
+
   .logo {
     height: 140px; /* jetzt größer */
     width: auto;
+    padding-left: 6em;
   }
   
   
@@ -30,14 +36,13 @@ body {
   }
   
   /* Navigation */
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    list-style: none;
-    padding: 0;
-    margin: 1em 0 0 0;
-  }
+nav ul {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
   
   nav a {
     text-decoration: none;
@@ -92,19 +97,18 @@ body {
   }
   
   /* Bilderreihe nebeneinander */
-  .bilderreihe {
-    display: flex;
-    gap: 1em;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1em;
-  }
-  
   .bilderreihe img {
     max-width: 48%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
   }
+  
+  .bilderreihe img:hover {
+    transform: scale(1.02);
+  }
+  
   
   /* Personenabschnitt mit Bild links, Text rechts */
   .person {
