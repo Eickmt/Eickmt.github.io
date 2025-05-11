@@ -8,20 +8,19 @@ body {
   }
   
   /* Header */
-header {
-  background-color: #3c6e47;
-  color: white;
-  padding: 1.5em 1em;
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
-.logo {
-  height: 60px;
-  width: auto;
-}
-
+  header {
+    background-color: #3c6e47;
+    color: white;
+    padding: 1.5em 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .logo {
+    height: 60px;
+    width: auto;
+  }
   
   header h1 {
     margin: 0;
@@ -78,8 +77,19 @@ header {
     main {
       padding: 0 1.5em;
     }
+  
+    .person {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .beschreibung {
+      width: 100%;
+    }
   }
-
+  
+  /* Bilderreihe nebeneinander */
   .bilderreihe {
     display: flex;
     gap: 1em;
@@ -95,7 +105,7 @@ header {
   }
   
   /* Personenabschnitt mit Bild links, Text rechts */
-.person {
+  .person {
     display: flex;
     align-items: flex-start;
     gap: 1.5em;
@@ -109,6 +119,10 @@ header {
     border-radius: 6px;
     object-fit: cover;
     flex-shrink: 0;
+  }
+  
+  .beschreibung {
+    flex: 1;
   }
   
   .person h3 {
