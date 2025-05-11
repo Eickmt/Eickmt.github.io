@@ -18,7 +18,7 @@ body {
   }
   
   .logo {
-    height: 60px;
+    max_height: 120px;
     width: auto;
   }
   
