@@ -135,3 +135,42 @@ nav ul {
     margin-top: 0;
   }
   
+
+  .porree-abschnitt {
+    display: flex;
+    gap: 2em;
+    margin: 3em 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .porree-abschnitt img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textblock {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .bioabschnitt {
+    display: flex;
+    gap: 2em;
+    margin: 3em 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .bioabschnitt img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textblock {
+    flex: 1;
+    min-width: 250px;
+  }
+  
