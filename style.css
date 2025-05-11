@@ -86,4 +86,24 @@ body {
     border-radius: 8px;
   }
   
+  /* Personenabschnitt mit Bild links, Text rechts */
+.person {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5em;
+    margin: 2em 0;
+    flex-wrap: wrap;
+  }
+  
+  .portrait {
+    width: 160px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .person h3 {
+    margin-top: 0;
+  }
   
