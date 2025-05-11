@@ -71,4 +71,19 @@ body {
       padding: 0 1.5em;
     }
   }
+
+  .bilderreihe {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+  }
+  
+  .bilderreihe img {
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
   
