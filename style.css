@@ -11,16 +11,17 @@ body {
   header {
     background-color: #3c6e47;
     color: white;
-    padding: 1.5em 1em;
+    padding: 1em 2em;
     display: flex;
     align-items: center;
-    gap: 1em;
+    justify-content: space-between;
   }
   
   .logo {
-    max_height: 120px;
+    height: 140px; /* jetzt größer */
     width: auto;
   }
+  
   
   header h1 {
     margin: 0;
