@@ -80,6 +80,12 @@ nav ul {
     align-items: center;
   }
 
+  @media (max-width: 600px) {
+  .kleinbilder-reihe img {
+    width: 45%;
+  }
+}
+
   nav {
     padding-left: 0;
     width: 100%;
@@ -208,5 +214,40 @@ nav ul {
 }
 
 .galerie img:hover {
+  transform: scale(1.03);
+}
+
+/* Galerie mit großen und kleinen Bildern in strukturierter Reihenfolge */
+
+.grossbild {
+  margin: 2em 0;
+}
+
+.grossbild img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kleinbilder-reihe {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.kleinbilder-reihe img {
+  width: 30%;
+  min-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.kleinbilder-reihe img:hover {
   transform: scale(1.03);
 }
