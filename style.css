@@ -251,3 +251,119 @@ nav ul {
 .kleinbilder-reihe img:hover {
   transform: scale(1.03);
 }
+
+/* Einheitliche Bildgrößen-System */
+
+/* Neue einheitliche Bilderreihe */
+.bilderreihe-einheitlich {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+/* Spezielle Bilderreihe für Galerie mit 3 Bildern */
+.galerie-bilderreihe {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.galerie-bilderreihe img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galerie-bilderreihe img:hover {
+  transform: scale(1.02);
+}
+
+/* Standard-Bildkategorien */
+.bild-klein {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bild-mittel {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bild-gross {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bild-portrait {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bild-vollbreite {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-Effekte für alle Standardbilder */
+.bild-klein:hover,
+.bild-mittel:hover, 
+.bild-gross:hover,
+.bild-portrait:hover,
+.bild-vollbreite:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Anpassungen für Standardgrößen */
+@media (max-width: 600px) {
+  .bild-klein {
+    width: 150px;
+    height: 120px;
+  }
+  
+  .bild-mittel {
+    width: 250px;
+    height: 170px;
+  }
+  
+  .bild-gross {
+    height: 300px;
+  }
+  
+  .bild-portrait {
+    width: 140px;
+    height: 180px;
+  }
+}
+
+/* Spezielle Anpassung für Bilder mit besonderen Proportionen */
+img[src*="Trecker_im_Feld_2.jpg"] {
+  object-fit: contain !important;
+  background-color: #f8f8f8;
+}
