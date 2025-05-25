@@ -56,6 +56,20 @@ nav ul {
     color: #a8c66c; /* Helles Grün */
   }
   
+  /* Aktive Seite hervorheben */
+  nav a.active {
+    background-color: #a8c66c;
+    color: #3c6e47;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  nav a.active:hover {
+    background-color: #b8d67c;
+    text-decoration: none;
+  }
+  
   /* Hauptinhalt */
   main {
     max-width: 800px;
@@ -79,12 +93,6 @@ nav ul {
     flex-direction: column;
     align-items: center;
   }
-
-  @media (max-width: 600px) {
-  .kleinbilder-reihe img {
-    width: 45%;
-  }
-}
 
   nav {
     padding-left: 0;
@@ -114,6 +122,10 @@ nav ul {
 
   .beschreibung {
     width: 100%;
+  }
+
+  .kleinbilder-reihe img {
+    width: 45%;
   }
 }
 
@@ -359,6 +371,41 @@ nav ul {
   .bild-portrait {
     width: 140px;
     height: 180px;
+  }
+
+  /* Mobile Anpassungen für Porree- und Bio-Abschnitte */
+  .porree-abschnitt,
+  .bioabschnitt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+  }
+
+  .porree-abschnitt img,
+  .bioabschnitt img {
+    max-width: 90%;
+    width: 280px;
+    height: auto;
+    order: 1;
+  }
+
+  .textblock {
+    min-width: auto;
+    width: 100%;
+    order: 2;
+  }
+
+  /* Galerie-Bilderreihe für Mobile */
+  .galerie-bilderreihe {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .galerie-bilderreihe img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
   }
 }
 
